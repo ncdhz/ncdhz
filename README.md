@@ -1,3 +1,3 @@
-<div style='color:red;'>
+<h1 style='color:red;'>
 xxx
-</div>
+</h1>
