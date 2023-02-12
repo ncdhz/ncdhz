@@ -12,32 +12,29 @@
             background-color: #f5f5f5;
         }
         .context_body {
+            font-family: "Times New Roman", "STKaiti";
             background-color: #fff;
             margin: 0 auto;
+            padding: 40px 40px 40px 40px;
             
         }
         @media (max-width: 768px) {
             .context_body {
-                width: calc(100% - 40px);
-                padding: 20px 20px;
+                width: calc(100% - 80px);
             }
         }
         @media (min-width: 768px) {
             .context_body {
-                width: 70%;
-                padding: 20px 40px 40px 40px;
+                width: 75%;
             }
         }
-        div {
-            font-family: "Times New Roman", LiSu;
-        }
         .name_contact {
-            height: 60px;
+            height: 70px;
         }
         .contact {
             float:right;
             text-align: left;
-            font-size: 12px;
+            font-size: 13px;
         }
         .contact div {
             padding: 2px 0;
@@ -49,46 +46,48 @@
         }
         .title {
             border-bottom: 2px solid #e6e6e6;
-            font-size: 20px;
-            font-weight: 800;
+            font-size: 22px;
+            font-weight: 900;
             margin-bottom: 10px;
             margin-top: 10px;
-            padding: 3px;
-        }
-        .content {
-            font-size: 18px;
-            font-family: "Times New Roman", STKaiti;
+            padding: 8px 3px 10px 3px;
         }
         .message_time {
             float: right;
-            color: #ea986c;
-            font-size: 12px;
+            color: orange;
+            font-size: 13px;
         }
         .message_name {
-            color: rgb(50, 50, 51);
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 18px;
             float: left;
+        }
+        .message_name span {
+            font-size: 14px;
         }
         .item, .context, .message_title ,.message_context {
             clear: both;
         }
+        .context {
+            margin-bottom: 10px;
+        }
+        .item p {
+            font-size: 17px;
+        }
         .message_context {
             display: block;
             padding: 0px 30px;
-            margin: 0px;
+            margin: 0px 10px;
         }
         .message_context li {
+            font-size: 17px;
             padding: 3px 0px;
-            color: #707070;
-        }
-        .item p {
-            color: #707070;
         }
     </style>
 </head>
 <body>
     <div class="context_body">
-        <div class='name_contact item'>
+        <div class='name_contact'>
             <div class="name">马俊龙</div>
             <div class="contact">
                 <div>邮箱：1137436221@qq.com</div>
@@ -98,74 +97,55 @@
         </div>
         <div class="item">
             <div class="title">简介</div>
-            <p>本人对编程有很高的热情，享受开发软件的过程，对计算机界的各种技术都想一探究竟，并可以在短时间内深入掌握某技术。使用过Java、Python、C++、Dart、Scala和JavaScript等语言开发过软件，熟悉前台、后台、大数据、深度学习和Flutter开发。并在自然语言处理领域完成了三篇论文。</p>
+            <p>本人对编程有很高的热情，享受开发软件的过程，对各种技术都想一探究竟，并可以在短时间内深入掌握某技术。使用过Java、Python、C++、Dart、Scala和JavaScript等语言开发过软件，熟悉前台（Vue等技术）、后台（Java的Spring等和Python的Flask等）、大数据（Hadoop和Spark等）、深度学习（Pytorch和C++模型部署）和Flutter开发。并在自然语言处理领域完成了六篇论文。</p>
         </div>
         <div class="item">
             <div class="title">论文</div>
-            <div class="context">
-                <div class="message_title">
-                    <div class="message_name">Context-guided Triple Matching for Multiple Choice Question Answering</div>
-                </div>
-                <ul class="message_context">
-                    <li>arxiv地址<a href="https://arxiv.org/abs/2109.12996v1">https://arxiv.org/abs/2109.12996v1</a>。</li>
-                </ul>
-            </div>
-            <div class="context">
-                <div class="message_title">
-                    <div class="message_name">Killing many birds with one stone: a transferable Extraction Question Answering algorithm for multiple-target domain adaptation</div>
-                </div>
-                <ul class="message_context">
-                    <li>ACL投稿中。</li>
-                </ul>
-            </div>
-            
-
-            <div class="context">
-                <div class="message_title">
-                    <div class="message_name">Less is more: Revisiting [Mask] based self-supervised learning for machine reading comprehension</div>
-                </div>
-                <ul class="message_context">
-                    <li>ACL投稿中。</li>
-                </ul>
-            </div>
+            <ul class="message_context">
+                <li>[MASK] Insertion: a robust method for anti-adversarial attacks（中ACL）</li>
+                <li>TS-EIR:Term Similarity-Perceived Extensive and Intensive Reading For Multiple Choice Question Answering（中ECIR）</li>
+                <li><a href="https://arxiv.org/abs/2109.12996v1">Context-guided Triple Matching for Multiple Choice Question Answering</a>（投稿中）</li>
+                <li>Killing many birds with one stone: a transferable Extraction Question Answering algorithm for multiple-target domain adaptation（投稿中）</li>
+                <li>Less is more: Revisiting [Mask] based self-supervised learning for machine reading comprehension（投稿中）</li>
+                <li>A unified framework towards robust word embeddings for Extractive Question Answering（投稿中）</li>
+            </ul>
         </div>
         <div class="item">
             <div class="title">工作经历</div>
             <div class="context">
                 <div class="message_title">
-                    <div class="message_name">襄阳苍苔计算机科技有限公司</div>
-                    <div class="message_time">2018/03-2019/07</div>
+                    <div class="message_name">西安康奈网络科技有限公司<span>（软件和算法开发）</span></div>
+                    <div class="message_time">2022/11-至今</div>
                 </div>
                 <ul class="message_context">
-                    <li>负责公司的运营和各种软件开发，此公司由本人创建（现已注销）。</li>
-                    <li>开发过微信小程序：文字变身二维码和密码表白墙。（暂停服务可以搜索到）</li>
-                    <li>开发过网站：湖北文理学院计算机学院官网、湖北文理学院老干处活动中心官网和买买菜电子商务平台，主要使用spring和vue等技术。</li>
+                    <li>舆情分析系统：负责其中算法开发与打标网站开发，主要使用到Flask、Vue和Pytorch等。</li>
                 </ul>
             </div>
             <div class="context">
                 <div class="message_title">
-                    <div class="message_name">佛山市奥策科技有限公司</div>
+                    <div class="message_name">佛山市奥策科技有限公司<span>（软件和算法开发）</span></div>
                     <div class="message_time">2021/06-2022/04</div>
                 </div>
                 <ul class="message_context">
-                    <li>实习，负责公司的算法和软件开发。</li>
                     <li>路面破损自动检测系统：通过GPS计算出携带设备的车辆的行驶速度，来控制线扫相机的对路面的扫描频率，使用图片像素均值控制相机的曝光，对采集到的图片使用目标检测算法预测出裂纹等信息。</li>
                     <li>轴承破损自动检测系统：使用四个线扫相机分别扫描轴承的四个面，对采集到的图片使用VIT模型进行训练并分类为有瑕疵和没有瑕疵。</li>
                     <li>电子激光枪APP：使用Flutter开发，通过蓝牙连接靶子获取用户的打靶信息，展示和分析用户打靶数据。</li>
                 </ul>
             </div>
+            <div class="context">
+                <div class="message_title">
+                    <div class="message_name">襄阳苍苔计算机科技有限公司<span>（全栈开发）</span></div>
+                    <div class="message_time">2018/03-2019/07</div>
+                </div>
+                <ul class="message_context">
+                    <li>此公司由本人创建（现已注销）。</li>
+                    <li>微信小程序：文字变身二维码和密码表白墙。（暂停服务可以搜索到）</li>
+                    <li>网站：湖北文理学院计算机学院官网、湖北文理学院老干处活动中心官网和买买菜电子商务平台，主要使用Spring和Vue等技术。</li>
+                </ul>
+            </div>
         </div>
         <div class="item">
             <div class="title">教育背景</div>
-            <div class="context">
-                <div class="message_title">
-                    <div class="message_name">湖北文理学院</div>
-                    <div class="message_time">2016/09-2020/06</div>
-                </div>
-                <ul class="message_context">
-                    <li>计算机科学与技术专业，获得本科学位。</li>
-                </ul>
-            </div>
             <div class="context">
                 <div class="message_title">
                     <div class="message_name">武汉纺织大学</div>
@@ -175,14 +155,24 @@
                     <li>硕士，软件工程专业在读。</li>
                 </ul>
             </div>
+            <div class="context">
+                <div class="message_title">
+                    <div class="message_name">湖北文理学院</div>
+                    <div class="message_time">2016/09-2020/06</div>
+                </div>
+                <ul class="message_context">
+                    <li>本科，计算机科学与技术专业。</li>
+                </ul>
+            </div>
         </div>
         <div class="item">
             <div class="title">其他</div>
             <div class="context">
                 <div class="message_title">
-                    <div class="message_name">Github开源项目</div>
+                    <div class="message_name">Github开源项目（业余爱好）</div>
                 </div>
                 <ul class="message_context">
+                    <li>leetcode：<a href="https://github.com/ncdhz/leetcode">https://github.com/ncdhz/leetcode</a>，LeetCode刷题平台，通过此软件可以把刷的算法题进行GitPage部署。</li>
                     <li>YoloV5-LibTorch：<a href="https://github.com/ncdhz/YoloV5-LibTorch">https://github.com/ncdhz/YoloV5-LibTorch</a>，可以使用此项目在C++中加载和使用YoloV5训练的模型。</li>
                     <li>anvn：<a href="https://github.com/ncdhz/anvn">https://github.com/ncdhz/anvn</a>，NLP中各种预训练模型结果和中间结果可视化软件，使用统计图的方式来观察模型参数。</li>
                     <li>sentenceLabel：<a href="https://github.com/ncdhz/sentenceLabel">https://github.com/ncdhz/sentenceLabel</a>，给多项选择问题中支撑句打标工具，此工具可以方便快捷的给多项选择问题中支撑句打标。</li>
