@@ -29,7 +29,7 @@
             }
         }
         .name_contact {
-            min-height: 90px;
+            min-height: 80px;
         }
         .contact {
             float: right;
@@ -54,16 +54,25 @@
             margin-top: 10px;
             padding: 8px 3px 10px 3px;
         }
+        .title::after, .title::before {
+            width: 50px;
+            height: 20px;
+            display: block;
+            background-color: rebeccapurple;
+        }
         .message_time {
-            float: right;
             color: orange;
-            font-size: 13px;
+            padding-top: 5px;
+            font-size: 14px;
+        }
+        .message_time::before {
+            content: '时间：';
         }
         .message_name {
             font-weight: 600;
             font-size: 18px;
-            float: left;
         }
+
         .message_name span {
             font-size: 14px;
         }
@@ -75,10 +84,11 @@
         }
         .message_context {
             padding: 0px;
-            margin: 0px 10px;
+            margin-bottom: 10px;
         }
         .message_context ul, .message_context ol{
             padding: 0px 10px;
+            margin-top: 5px;
         }
         .message_context li {
             font-size: 17px;
