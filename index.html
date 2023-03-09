@@ -53,12 +53,23 @@
             margin-bottom: 10px;
             margin-top: 10px;
             padding: 8px 3px 10px 3px;
+            position: relative;
         }
-        .title::after, .title::before {
-            width: 50px;
-            height: 20px;
+        .title::before, .title::after {
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            content: "";
             display: block;
-            background-color: rebeccapurple;
+            background-color: #e6e6e6;
+        }
+        .title::before {
+            bottom: -2px;
+            left: -10px;
+        }
+        .title::after {
+            bottom: -2px;
+            right: 0px;
         }
         .message_time {
             color: orange;
