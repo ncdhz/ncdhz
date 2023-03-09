@@ -16,7 +16,7 @@
             background-color: #fff;
             margin: 0 auto;
             padding: 40px 50px;
-            
+            font-size: 20px;
         }
         @media (max-width: 768px) {
             .context_body {
@@ -29,12 +29,12 @@
             }
         }
         .name_contact {
-            min-height: 80px;
+            min-height: 90px;
         }
         .contact {
             float: right;
             text-align: left;
-            font-size: 15px;
+            font-size: 18px;
         }
         .contact ul {
             float: left;
@@ -42,13 +42,14 @@
             margin-top: 0px;
         }
         .name {
-            float:left;
-            font-size: 40px;
+            float: left;
+            font-size: 46px;
             font-weight: 800;
+            line-height: 80px;
         }
         .title {
             border-bottom: 2px solid #e6e6e6;
-            font-size: 22px;
+            font-size: 26px;
             font-weight: 900;
             margin-bottom: 10px;
             margin-top: 10px;
@@ -71,41 +72,50 @@
             bottom: -2px;
             right: 0px;
         }
+        .message_title {
+            line-height: 30px;
+        }
         .message_time {
             color: orange;
-            padding-top: 5px;
-            font-size: 14px;
-        }
-        .message_time::before {
-            content: '时间：';
+            font-size: 18px;
+            width: 135px;
+            float: left;
         }
         .message_name {
             font-weight: 600;
+            font-size: 22px;
+            float: left;
+        }
+        .message_context_sub {
             font-size: 18px;
+            float: left;
+            padding-left: 10px;
         }
-
-        .message_name span {
-            font-size: 14px;
-        }
-        .item, .context, .message_title ,.message_context {
-            clear: both;
+        .message_context_sub span {
+            padding-right: 10px;
         }
         .context {
             margin-bottom: 10px;
         }
+        .item, .context, .message_title ,.message_context {
+            clear: both;
+        }
         .message_context {
             padding: 0px;
-            margin-bottom: 10px;
         }
         .message_context ul, .message_context ol{
-            padding: 0px 10px;
-            margin-top: 5px;
+            margin: 0px;
+            line-height: 27px;
+        }
+        .message_context ul {
+            padding-left: 5px;
+        }
+        .message_context ol {
+            padding-left: 25px;
         }
         .message_context li {
-            font-size: 17px;
             padding: 3px 0px;
         }
-
         .message_context ul li {
             list-style: none;
         }
@@ -132,26 +142,17 @@
             <div class="title">背景</div>
             <div class="context">
                 <div class="message_title">
+                    <div class="message_time">2020.09-2023.06</div>
                     <div class="message_name">武汉纺织大学</div>
-                    <div class="message_time">2020/09-2023/06</div>
-                </div>
-                <div class="message_context">
-                    <ul>
-                        <li>硕士，软件工程专业在读。</li>
-                    </ul>
+                    <div class="message_context_sub"><span>硕士</span><span>软件工程专业</span></div>
                 </div>
             </div>
             <div class="context">
                 <div class="message_title">
+                    <div class="message_time">2016.09-2020.06</div>
                     <div class="message_name">湖北文理学院</div>
-                    <div class="message_time">2016/09-2020/06</div>
+                    <div class="message_context_sub"><span>本科</span><span>计算机科学与技术专业</span></div>
                 </div>
-                <div class="message_context">
-                    <ul>
-                        <li>本科，计算机科学与技术专业。</li>
-                    </ul>
-                </div>
-                
             </div>
             <div class="context">
                 <div class="message_title">
@@ -164,7 +165,6 @@
                 </div>
             </div>
         </div>
-       
         <div class="item">
             <div class="title">论文</div>
             <div class="message_context">
@@ -182,8 +182,9 @@
             <div class="title">工作经历</div>
             <div class="context">
                 <div class="message_title">
-                    <div class="message_name">西安康奈网络科技有限公司<span>（软件和算法开发）</span></div>
-                    <div class="message_time">2022/11-至今</div>
+                    <div class="message_time">2022.11-至今</div>
+                    <div class="message_name">西安康奈网络科技有限公司</div>
+                    <div class="message_context_sub">软件和算法开发</div>
                 </div>
                 <div class="message_context">
                     <ul>
@@ -193,8 +194,9 @@
             </div>
             <div class="context">
                 <div class="message_title">
-                    <div class="message_name">佛山市奥策科技有限公司<span>（软件和算法开发）</span></div>
-                    <div class="message_time">2021/06-2022/04</div>
+                    <div class="message_time">2021.06-2022.04</div>
+                    <div class="message_name">佛山市奥策科技有限公司</div>
+                    <div class="message_context_sub">软件和算法开发</div>
                 </div>
                 <div class="message_context">
                     <ol>
@@ -206,24 +208,25 @@
             </div>
             <div class="context">
                 <div class="message_title">
-                    <div class="message_name">襄阳苍苔计算机科技有限公司<span>（全栈开发）</span></div>
-                    <div class="message_time">2018/03-2019/07</div>
+                    <div class="message_time">2018.03-2019.07</div>
+                    <div class="message_name">襄阳苍苔计算机科技有限公司</div>
+                    <div class="message_context_sub">全栈开发</div>
                 </div>
                 <div class="message_context">
                     <ol>
                         <li>此公司由本人创建（现已注销）。</li>
-                        <li>微信小程序：文字变身二维码和密码表白墙。（暂停服务可以搜索到）</li>
+                        <li>微信小程序：文字变身二维码和密码表白墙（暂停服务可以搜索到）。</li>
                         <li>网站：湖北文理学院计算机学院官网、湖北文理学院老干处活动中心官网和买买菜电子商务平台，主要使用Spring和Vue等技术。</li>
                     </ol>
                 </div>
             </div>
         </div>
-        
         <div class="item">
             <div class="title">其他</div>
             <div class="context">
                 <div class="message_title">
-                    <div class="message_name">Github开源项目<span>（业余爱好）</span></div>
+                    <div class="message_name">Github开源项目</div>
+                    <div class="message_context_sub">业余爱好</div>
                 </div>
                 <div class="message_context">
                     <ol>
