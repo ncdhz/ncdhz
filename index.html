@@ -74,33 +74,32 @@
         }
         .message_title {
             line-height: 30px;
+            font-size: 22px;
+            clear: both;
         }
         .message_time {
             color: orange;
-            font-size: 18px;
-            width: 135px;
+            width: 165px;
             float: left;
         }
         .message_name {
             font-weight: 600;
-            font-size: 22px;
             float: left;
         }
         .message_context_sub {
-            font-size: 18px;
+            font-weight: 600;
             float: left;
             padding-left: 10px;
         }
         .message_context_sub span {
             padding-right: 10px;
         }
+        .empty {height: 15px;  clear: both;}
         .context {
             margin-bottom: 10px;
         }
-        .item, .context, .message_title ,.message_context {
-            clear: both;
-        }
         .message_context {
+            clear: both;
             padding: 0px;
         }
         .message_context ul, .message_context ol{
@@ -154,6 +153,7 @@
                     <div class="message_context_sub"><span>本科</span><span>计算机科学与技术专业</span></div>
                 </div>
             </div>
+            <div class="empty"></div>
             <div class="context">
                 <div class="message_title">
                     <div class="message_name">个人简介</div>
@@ -226,7 +226,6 @@
             <div class="context">
                 <div class="message_title">
                     <div class="message_name">Github开源项目</div>
-                    <div class="message_context_sub">业余爱好</div>
                 </div>
                 <div class="message_context">
                     <ol>
