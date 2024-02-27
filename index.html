@@ -78,8 +78,9 @@
             clear: both;
         }
         .message_time {
-            color: orange;
+            color: #FF851B;
             width: 165px;
+            font-weight: 600;
             float: left;
         }
         .message_name {
@@ -87,7 +88,7 @@
             float: left;
         }
         .message_context_sub {
-            font-weight: 600;
+            color: #FF851B;
             float: left;
             padding-left: 10px;
         }
@@ -160,43 +161,35 @@
                 </div>
                 <div class="message_context">
                     <ul>
-                        <li>本人对编程有很高的热情，享受开发软件的过程，对各种技术都想一探究竟，并可以在短时间内深入掌握某技术。使用过Java、Python、C++、Dart、Scala和JavaScript等语言开发过软件，熟悉前台（Vue等技术）、后台（Java的Spring等和Python的Flask等）、大数据（Hadoop和Spark等）、深度学习（Pytorch和C++模型部署）和Flutter开发。并在自然语言处理领域完成了六篇论文。</li>
+                        <li>本人对编程有很高的热情，享受软件开发过程，对各种技术都想一探究竟。使用过Java、Python、C++、Dart、Scala和JavaScript等语言开发过软件，熟悉深度学习（Pytorch和C++模型部署）、前台（Vue等技术）、后台（Java的Spring等和Python的Flask等）和Flutter开发。并在自然语言处理领域完成了六篇论文。</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="item">
-            <div class="title">论文</div>
-            <div class="message_context">
-                <ol>
-                    <li>[MASK] Insertion: a robust method for anti-adversarial attacks（中EACL-2023）</li>
-                    <li>TS-EIR:Term Similarity-Perceived Extensive and Intensive Reading For Multiple Choice Question Answering（中IEEE UIC-2022）</li>
-                    <li><a href="https://arxiv.org/abs/2109.12996v1">Context-guided Triple Matching for Multiple Choice Question Answering</a>（投稿中）</li>
-                    <li>Killing many birds with one stone: a transferable Extraction Question Answering algorithm for multiple-target domain adaptation（投稿中）</li>
-                    <li>Less is more: Revisiting [Mask] based self-supervised learning for machine reading comprehension（投稿中）</li>
-                    <li>A unified framework towards robust word embeddings for Extractive Question Answering（投稿中）</li>
-                </ol>
-            </div>
-        </div>
+        
         <div class="item">
             <div class="title">工作经历</div>
             <div class="context">
                 <div class="message_title">
                     <div class="message_time">2022.11-至今</div>
                     <div class="message_name">西安康奈网络科技有限公司</div>
-                    <div class="message_context_sub">软件和算法开发</div>
+                    <div class="message_context_sub">算法工程师</div>
                 </div>
                 <div class="message_context">
-                    <ul>
-                        <li>舆情分析系统：负责其中算法开发与打标网站开发，主要使用到Flask、Vue和Pytorch等。</li>
-                    </ul>
+                    <ol>
+                        <li>文本舆情分析算法：判断文本数据的调性。</li>
+                        <li>图片舆情分析算法：用于过滤或筛选出合适的图片数据。</li>
+                        <li>OCR验证码识别算法：识别验证码服务于爬虫工程师。</li>
+                        <li>人脸识别算法：在海量数据中提取出相似人脸。</li>
+                        <li>区域匹配算法：匹配文本数据所在区域。</li>
+                    </ol>
                 </div>
             </div>
             <div class="context">
                 <div class="message_title">
                     <div class="message_time">2021.06-2022.04</div>
                     <div class="message_name">佛山市奥策科技有限公司</div>
-                    <div class="message_context_sub">软件和算法开发</div>
+                    <div class="message_context_sub">算法工程师</div>
                 </div>
                 <div class="message_context">
                     <ol>
@@ -216,9 +209,22 @@
                     <ol>
                         <li>此公司由本人创建（现已注销）。</li>
                         <li>微信小程序：文字变身二维码和密码表白墙（暂停服务可以搜索到）。</li>
-                        <li>网站：湖北文理学院计算机学院官网、湖北文理学院老干处活动中心官网和买买菜电子商务平台，主要使用Spring和Vue等技术。</li>
+                        <li>网站：湖北文理学院计算机学院官网、湖北文理学院老干处活动中心官网和买买菜电子商务平台。</li>
                     </ol>
                 </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">论文</div>
+            <div class="message_context">
+                <ol>
+                    <li>[MASK] Insertion: a robust method for anti-adversarial attacks（中EACL-2023）</li>
+                    <li>TS-EIR:Term Similarity-Perceived Extensive and Intensive Reading For Multiple Choice Question Answering（中IEEE UIC-2022）</li>
+                    <li>Context-guided Triple Matching for Multiple Choice Question Answering（中IEEE UIC-2022）</li>
+                    <li>Killing Many Birds With one stone: a transferable Extraction Question Answering algorithm for multiple-target domain adaptation（投稿中）</li>
+                    <li>Less is more: Revisiting [Mask] based self-supervised learning for machine reading comprehension（投稿中）</li>
+                    <li>A unified framework towards robust word embeddings for Extractive Question Answering（投稿中）</li>
+                </ol>
             </div>
         </div>
         <div class="item">
@@ -229,14 +235,9 @@
                 </div>
                 <div class="message_context">
                     <ol>
-                        <li>leetcode：<a href="https://github.com/ncdhz/leetcode">https://github.com/ncdhz/leetcode</a>，LeetCode刷题平台，通过此软件可以把刷的算法题进行GitPage部署。</li>
-                        <li>YoloV5-LibTorch：<a href="https://github.com/ncdhz/YoloV5-LibTorch">https://github.com/ncdhz/YoloV5-LibTorch</a>，可以使用此项目在C++中加载和使用YoloV5训练的模型。</li>
-                        <li>anvn：<a href="https://github.com/ncdhz/anvn">https://github.com/ncdhz/anvn</a>，NLP中各种预训练模型结果和中间结果可视化软件，使用统计图的方式来观察模型参数。</li>
-                        <li>sentenceLabel：<a href="https://github.com/ncdhz/sentenceLabel">https://github.com/ncdhz/sentenceLabel</a>，给多项选择问题中支撑句打标工具，此工具可以方便快捷的给多项选择问题中支撑句打标。</li>
-                        <li>reba：<a href="https://github.com/ncdhz/reba">https://github.com/ncdhz/reba</a>，类似<a href="https://babel.docschina.org/">Babel</a>的编译器，通过此库可以轻松获取JavaScript语言的语法树等。</li>
-                        <li>redis-high-availability：<a href="https://github.com/ncdhz/redis-high-availability">https://github.com/ncdhz/redis-high-availability</a>，通过修改redis源码实现redis主从备份和主主备份。</li>
-                        <li>cat：<a href="https://github.com/ncdhz/cat">https://github.com/ncdhz/cat</a>，这是一个类容器，内置了一些注解可以轻松实现Java代码解耦。</li>
-                        <li>fishing-game：<a href="https://github.com/ncdhz/fishing-game">https://github.com/ncdhz/fishing-game</a>，这是基于libGDX开发的打鱼游戏。</li>
+                        <li>Yolo-LibTorch：<a href="https://ncdhz.github.io/Yolo-LibTorch">https://ncdhz.github.io/Yolo-LibTorch</a>，可以使用此项目在C++中加载和使用YoloV5训练的模型。</li>
+                        <li>no_config：<a href="https://ncdhz.github.io/no_config">https://ncdhz.github.io/no_config</a>，对Python平台中配置注入提供了简单的解决方案。</li>
+                        <li>leetcode：<a href="https://ncdhz.github.io/leetcode">https://ncdhz.github.io/leetcode</a>，此软件可以把LeetCode刷的算法题进行GitPage部署。</li>
                     </ol>
                 </div>
             </div>
@@ -244,3 +245,4 @@
     </div>
 </body>
 </html>
+ 
